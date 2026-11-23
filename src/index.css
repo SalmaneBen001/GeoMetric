@@ -3,12 +3,22 @@
 @theme {
   --color-brand: #e11d48;
   --color-brand-dark: #be123c;
-  --color-sidebar: #12141f;
+  --color-sidebar: #171923;
   --color-page: #f5f6fb;
   --color-slate-chart: #475569;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
-  @apply bg-page text-slate-900 antialiased;
+  @apply min-h-screen bg-page text-slate-900 antialiased;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold tracking-tight text-slate-900;
+  }
 }
